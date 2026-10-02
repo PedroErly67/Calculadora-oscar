@@ -1,0 +1,122 @@
+
+body {
+    font-family: 'Consolas', 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(images.png);
+    background-size: 40px 40px;
+}
+
+.container {
+    background: #c0c0c0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 208, 255, 0.7);
+    border: 2px solid #00d0ff;
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-shadow:0 0 20px rgba(0, 208, 255, 0.7);
+    border-bottom: 1px solid #00d0ff;
+    padding-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #00befe;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    background: var(--bg-dark);
+    color: #00befe;
+    border: 2px solid #00d0ff;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #00befe;
+    box-shadow: 0 0 8px var(#00befe);
+}
+
+select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 8px auto;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 15px;
+    background: #00d0ff;
+    color: var(--bg-dark);
+    border: 2px solid var(#00befe);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px rgba(0, 195, 255, 0.5);
+}
+
+button:hover {
+    background: #00befe;
+    color: var(--bg-dark);
+    box-shadow: 0 0 15px var(#00befe);
+}
+
+button:active {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px var(#00befe);
+}
+
+.resultado {
+    margin-top: 30px;
+    padding: 15px;
+    background: var(--bg-dark);
+    border: 2px solid var(#00befe);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(#00befe);
+    box-shadow: 0 0 20px rgba(0, 208, 255, 0.7);
+}
+
+.error {
+    background: #c0c0c0;
+    border-color: #ff4500;
+    color: #ff4500;
+    box-shadow: 0 0 10px #ff4500;
+}

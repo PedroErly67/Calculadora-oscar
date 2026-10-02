@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora dus gurizes</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gr</h1>
+        
+        <div class="input-group">
+            <label for="numero1">Primeiro numero né:</label>
+            <input type="number" id="numero1" placeholder="Ahannn escreve logo">
+        </div>
+        
+        <div class="input-group">
+            <label for="numero2">Segundo número:</label>
+            <input type="number" id="numero2" placeholder="Ingresa el segundo número">
+        </div>
+        
+        <div class="botones">
+            <button onclick="conta(&#39;+&#39;)">+</button>
+            <button onclick="conta(&#39;-&#39;)">−</button>
+            <button onclick="conta(&#39;*&#39;)">×</button>
+            <button onclick="conta(&#39;/&#39;)">÷</button>
+        </div>
+        
+        <div id="resultado" class="resultado" style="display: none;">
+            <span id="valorResultado"></span>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
